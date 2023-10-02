@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <p>Paragraph</p>
+    <a href="#">link</a>
+    <img src="" alt="" />
+    <div class="x">Div with a class</div>
+    <div id="y">Div with an id</div>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+  </body>
+  <script>
+    // 1. Select all elements not using the querySelector method.
+    console.log("****1****");
+    const elements = document.getElementsByTagName("*");
+    console.log(elements);
+    // 2. Select all elements using querySelector method.
+    console.log("****2****");
+    const elements2 = document.querySelector("*");
+    console.log(elements2);
+    // 3. Select all inputs and iterate over them with the forEach method and
+    // print each one to the console. Using both querySelectorAll and getElementsByTagName
+    // a. querySelectorAll
+    console.log("****3a****");
+    const selectorAll = document.querySelectorAll("input"); // returns node list
+    selectorAll.forEach((element) => {
+      console.log("element: ", element);
+    });
+    // b. getElementsByTagName
+    console.log("****3b****");
+    const ByTagName = document.getElementsByTagName("input"); // returns html collection
+    Array.from(ByTagName).forEach((element) => {
+      console.log("element: ", element);
+    });
+  </script>
+</html>
