@@ -23,6 +23,24 @@
     <div id="description">Select me and change my display property</div>
   </body>
   <script>
-    //your js code here
+    // 1. Change the h1 color to blue.
+    const h1 = document.getElementsByTagName("h1");
+    Array.from(h1).forEach((h1) => {
+      h1.style.color = "blue";
+    });
+    // 2. Change the paragraph to 30 px
+    const paragraph = document.getElementsByClassName("paragraph");
+    Array.from(paragraph).forEach((par) => {
+      par.style.fontSize = "30px";
+    });
+    // 3. Change the description to an inline-block
+    const description = document.getElementById("description");
+    description.style.display = "inline-block";
+    // 4. Change the body to a background color of green
+    const body = document.body;
+    body.style.backgroundColor = "green";
+    // 5. Change the document title from “Modifying Elements” to something else.
+    const title = document.querySelector("title");
+    title.innerText = "Something else :P";
   </script>
 </html>
