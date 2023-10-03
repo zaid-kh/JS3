@@ -1,0 +1,11 @@
+section {
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+
+}
+
+button {
+    margin-top: 5px;
+    width: fit-content;
+}
